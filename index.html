@@ -25,17 +25,17 @@
                 </a>
             </div>
             <div class="flex gap-8">
-              <div class="flex justify-between items-center w-16 h-10 bg-slate-100 rounded-lg ">
+                <div class="flex justify-between items-center w-16 h-10 bg-slate-100 rounded-lg ">
+                    <div>
+                        <img src="assets/checkbox.png" alt="">
+                    </div>
+                    <div id="count-add" class="text-xl font-bold">
+                        23
+                    </div>
+                </div>
                 <div>
-                    <img src="assets/checkbox.png" alt="">
+                    <img src="assets/theme-btn.png" alt="">
                 </div>
-                <div class="text-xl font-bold">
-                    23
-                </div>
-              </div>
-              <div>
-                <img src="assets/theme-btn.png" alt="">
-              </div>
 
             </div>
 
@@ -45,9 +45,9 @@
 
     </header>
     <main>
-        <div class="grid grid-cols-4 gap-4 p-4">
-            <div class="col-span-3 p-4 ">
-                <div class="grid grid-cols-4 gap-4 p-4">
+        <div class="grid justify-center lg:grid-cols-4 gap-4 p-4">
+            <div class="col-span-1 lg:col-span-3 p-4 ">
+                <div class="grid lg:grid-cols-4 gap-4 p-4">
 
                     <div class="col-span-1 bg-blue-200 p-4 rounded-lg flex justify-center items-center gap-3">
                         <div>
@@ -55,14 +55,14 @@
                         </div>
                         <div class="text-blue-800 text-md ">
                             <p>Task Assignd</p>
-                            <h1 class=" font-bold">5</h1>
+                            <h1 id="count-reduce" class=" font-bold">6</h1>
                         </div>
 
                     </div>
 
 
                     <div
-                        class="col-span-2 bg-linear-to-t from-sky-500 to-indigo-500 p-4 rounded-lg flex items-center gap-3">
+                        class="lg:col-span-2 bg-linear-to-t from-sky-500 to-indigo-500 p-4 rounded-lg flex items-center gap-3">
                         <div>
                             <img src="assets/board.png" alt="">
                         </div>
@@ -84,27 +84,27 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2  gap-11 p-4">
+                <div class="grid lg:grid-cols-3  gap-4 lg:p-4">
                     <div class="bg-blue-200 p-6 h-72 rounded-lg space-y-4">
                         <div class="w-20 h-8 bg-slate-100 rounded-lg text-center">
 
                             ShopEase
 
                         </div>
-                        <div class="text-xl font-medium text-slate-700 ">
+                        <div id="card1-title"  class="text-xl font-medium text-slate-700 ">
                             Fix Mobile Button Issue
                         </div>
                         <div class="w-56 h-14  bg-slate-100 rounded-lg text-center text-base">
                             Debug using Chrome DevTools, check for overlapping _
                         </div>
-                        <div class="flex justify-between ">
-                            <div>
+                        <div class="flex justify-between gap-1 ">
+                            <div >
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">02 March 2025</h1>
 
                             </div>
                             <div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="card1-button" class=" btn btn-primary">Completed</button>
                             </div>
                         </div>
 
@@ -112,10 +112,10 @@
                     <div class="bg-blue-200 p-6 h-72 rounded-lg space-y-4">
                         <div class="w-20 h-8 bg-slate-100 rounded-lg text-center">
 
-                            CloudSync 
+                            CloudSync
 
                         </div>
-                        <div class="text-xl font-medium text-slate-700 ">
+                        <div id="card2-title" class="text-xl font-medium text-slate-700 ">
                             Add Dark Mode
                         </div>
                         <div class="w-56 h-14  bg-slate-100 rounded-lg text-center text-base">
@@ -128,7 +128,7 @@
 
                             </div>
                             <div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="card2-button" class="btn btn-primary">Completed</button>
                             </div>
                         </div>
 
@@ -139,7 +139,7 @@
                             SwiftPay
 
                         </div>
-                        <div class="text-xl font-medium text-slate-700 ">
+                        <div id="card3-title" class="text-xl font-medium text-slate-700 ">
                             Optimize Home page
                         </div>
                         <div class="w-56 h-14  bg-slate-100 rounded-lg text-center text-base">
@@ -152,7 +152,7 @@
 
                             </div>
                             <div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="card3-button" class="btn btn-primary">Completed</button>
                             </div>
                         </div>
 
@@ -163,8 +163,8 @@
                             Meta
 
                         </div>
-                        <div class="text-xl font-medium text-slate-700">
-                            Add new emoji 
+                        <div id="card4-title" class="text-xl font-medium text-slate-700">
+                            Add new emoji
                         </div>
                         <div class="w-56 h-14  bg-slate-100 rounded-lg text-center text-base">
                             Debug using Chrome DevTools, check for overlapping _
@@ -176,7 +176,7 @@
 
                             </div>
                             <div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="card4-button" class="btn btn-primary">Completed</button>
                             </div>
                         </div>
 
@@ -187,8 +187,8 @@
                             Google LLC
 
                         </div>
-                        <div class="text-xl font-medium text-slate-700 ">
-                            Integrate OpenAI API 
+                        <div id="card5-title" class="text-xl font-medium text-slate-700 ">
+                            Integrate OpenAI API
                         </div>
                         <div class="w-56 h-14  bg-slate-100 rounded-lg text-center text-base">
                             Debug using Chrome DevTools, check for overlapping _
@@ -200,7 +200,7 @@
 
                             </div>
                             <div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="card5-button" class="btn btn-primary">Completed</button>
                             </div>
                         </div>
 
@@ -211,8 +211,8 @@
                             Glassdoar
 
                         </div>
-                        <div class="text-xl font-medium text-slate-700">
-                            Improve Job searching 
+                        <div id="card6-title" class="text-xl font-medium text-slate-700">
+                            Improve Job searching
                         </div>
                         <div class="w-56 h-14  bg-slate-100 rounded-lg text-center text-base">
                             Debug using Chrome DevTools, check for overlapping _
@@ -224,7 +224,7 @@
 
                             </div>
                             <div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="card6-button" class="btn btn-primary">Completed</button>
                             </div>
                         </div>
 
@@ -232,24 +232,34 @@
                 </div>
 
             </div>
-            <div class="col-span-1 flex flex-col items-center bg-red-400 p-4 text-white">
-                <div class="space-y-4">
-                    <div class="flex">
-                        <img src="assets/activity.png" alt="">
-                        <p class="text-xl text-slate-800">Activity log</p>
+            <div class="col-span-1 flex flex-col space-y-4 items-center bg-red-400 lg:p-4 text-white">
 
-                    </div>
-                    <div>
-                        <button class="btn btn-primary">Clear History</button>
+                <div class="flex">
+                    <img src="assets/activity.png" alt="">
+                    <p class="text-xl text-slate-800">Activity log</p>
 
-                    </div>
                 </div>
-                <div class="divider"></div>
+                <div id="clear-button">
+                    <button class="btn btn-primary">Clear History</button>
+
+                </div>
+
+                <div class="divider">
+
+
+                </div>
+                <div id="history-section">
+
+                </div>
 
 
             </div>
         </div>
     </main>
+
+
+    <script src="script.js"></script>
+    <script src="common.js"></script>
 
 </body>
 
