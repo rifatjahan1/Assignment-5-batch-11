@@ -25,3 +25,9 @@ function handleClick(buttonId) {
 function getRandomColor() {
          return `hsl(${Math.floor(Math.random() * 360)}, 70%, 70%)`;
      };
+
+    
+ 
+  document.getElementById('back-home').addEventListener("click",function(){
+    window.location.href = "index.html";
+  })

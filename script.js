@@ -29,6 +29,7 @@ clearButton.addEventListener("click",function(){
     document.getElementById("history-section").innerText='';
 })
 
+
 });
 
 
@@ -183,4 +184,9 @@ document.getElementById('random-color').addEventListener("click",function(){
     let bodyColor=document.getElementById("body-color");
     bodyColor.style.backgroundColor = getRandomColor();
 })
+
+document.getElementById('newtoday-section').addEventListener("click",function(){
+    window.location.href = "new.html";
+}) 
+
 
