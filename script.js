@@ -1,7 +1,7 @@
 let countAdd =23;
 let countReduce = 6;
 let clearButton=document.getElementById('clear-button');
-
+document.getElementById("date-show").innerText = new Date().toDateString();
 
 
 
@@ -15,11 +15,13 @@ document.getElementById('card1-button').addEventListener("click", function () {
     countReduce--;
     document.getElementById("count-add").innerText =countAdd;
     document.getElementById("count-reduce").innerText=countReduce;
+    //document.getElementById("date-show").innerText = new Date().toUTCString();s
     let card1Title=document.getElementById("card1-title").innerText;
     let dateDisplay=new Date().toDateString();
     let historySection =document.getElementById("history-section");
     let p=document.createElement("p");
-    p.innerText =`you have completed ${card1Title} at ${dateDisplay}`
+    p.style.color="black";
+    p.innerText =`You have completed ${card1Title} at ${dateDisplay}`
      historySection.appendChild(p);
  
 
@@ -45,11 +47,13 @@ document.getElementById('card2-button').addEventListener("click", function () {
     countReduce--;
     document.getElementById("count-add").innerText =countAdd;
     document.getElementById("count-reduce").innerText=countReduce;
+    //document.getElementById("date-show").innerText = new Date().toUTCString();
     let card2Title=document.getElementById("card2-title").innerText;
     let dateDisplay=new Date().toDateString();
     let historySection =document.getElementById("history-section");
     let p=document.createElement("p");
-    p.innerText =`you have completed ${card2Title} at ${dateDisplay}`
+    p.style.color="black";
+    p.innerText =`You have completed ${card2Title} at ${dateDisplay}`
      historySection.appendChild(p);
  
 
@@ -71,11 +75,13 @@ document.getElementById('card3-button').addEventListener("click", function () {
     countReduce--;
     document.getElementById("count-add").innerText =countAdd;
     document.getElementById("count-reduce").innerText=countReduce;
+    //document.getElementById("date-show").innerText = new Date().toUTCString();
     let card3Title=document.getElementById("card3-title").innerText;
     let dateDisplay=new Date().toDateString();
     let historySection =document.getElementById("history-section");
     let p=document.createElement("p");
-    p.innerText =`you have completed ${card3Title} at ${dateDisplay}`
+    p.style.color="black";
+    p.innerText =`You have completed ${card3Title} at ${dateDisplay}`
      historySection.appendChild(p);
  
 
@@ -99,11 +105,13 @@ document.getElementById('card4-button').addEventListener("click", function () {
     countReduce--;
     document.getElementById("count-add").innerText =countAdd;
     document.getElementById("count-reduce").innerText=countReduce;
+    //document.getElementById("date-show").innerText = new Date().toUTCString();
     let card4Title=document.getElementById("card4-title").innerText;
     let dateDisplay=new Date().toDateString();
     let historySection =document.getElementById("history-section");
     let p=document.createElement("p");
-    p.innerText =`you have completed ${card4Title} at ${dateDisplay}`
+    p.style.color="black";
+    p.innerText =`You have completed ${card4Title} at ${dateDisplay}`
      historySection.appendChild(p);
  
 
@@ -125,11 +133,13 @@ document.getElementById('card5-button').addEventListener("click", function () {
     countReduce--;
     document.getElementById("count-add").innerText =countAdd;
     document.getElementById("count-reduce").innerText=countReduce;
+    //document.getElementById("date-show").innerText = new Date().toUTCString();
     let card5Title=document.getElementById("card5-title").innerText;
     let dateDisplay=new Date().toDateString();
     let historySection =document.getElementById("history-section");
     let p=document.createElement("p");
-    p.innerText =`you have completed ${card5Title} at ${dateDisplay}`
+    p.style.color="black";
+    p.innerText =`You have completed ${card5Title} at ${dateDisplay}`
      historySection.appendChild(p);
  
 
@@ -151,11 +161,13 @@ document.getElementById('card6-button').addEventListener("click", function () {
     countReduce--;
     document.getElementById("count-add").innerText =countAdd;
     document.getElementById("count-reduce").innerText=countReduce;
+    //document.getElementById("date-show").innerText = new Date().toUTCString();
     let card6Title=document.getElementById("card6-title").innerText;
     let dateDisplay=new Date().toDateString();
     let historySection =document.getElementById("history-section");
     let p=document.createElement("p");
-    p.innerText =`you have completed ${card6Title} at ${dateDisplay}`
+    p.style.color="black";
+    p.innerText =`You have completed ${card6Title} at ${dateDisplay}`
      historySection.appendChild(p);
  
 
@@ -164,4 +176,11 @@ clearButton.addEventListener("click",function(){
 })
 
 });
+
+//Random color function call
+
+document.getElementById('random-color').addEventListener("click",function(){
+    let bodyColor=document.getElementById("body-color");
+    bodyColor.style.backgroundColor = getRandomColor();
+})
 
