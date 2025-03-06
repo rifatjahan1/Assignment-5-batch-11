@@ -24,6 +24,7 @@ document.getElementById('card1-button').addEventListener("click", function () {
     let p=document.createElement("p");
     p.style.color="black";
     let timeDisplay=new Date().toLocaleTimeString();
+    p.classList.add("bg-slate-200", "p-1","mt-1", "rounded-lg");
     p.innerText =`${index}.You have completed ${card1Title} on ${dateDisplay} at ${timeDisplay} `
      historySection.appendChild(p);
  
@@ -59,6 +60,7 @@ document.getElementById('card2-button').addEventListener("click", function () {
     let p=document.createElement("p");
     p.style.color="black";
     let timeDisplay=new Date().toLocaleTimeString();
+    p.classList.add("bg-slate-200", "p-1","mt-2", "rounded-lg");
     p.innerText =`${index}.You have completed ${card2Title} on ${dateDisplay} at ${timeDisplay} `
      historySection.appendChild(p);
  
@@ -79,6 +81,7 @@ document.getElementById('card3-button').addEventListener("click", function () {
     handleClick("card3-button");
     countAdd++;
     countReduce--;
+    index++;
     document.getElementById("count-add").innerText =countAdd;
     document.getElementById("count-reduce").innerText=countReduce;
     //document.getElementById("date-show").innerText = new Date().toUTCString();
@@ -88,6 +91,7 @@ document.getElementById('card3-button').addEventListener("click", function () {
     let p=document.createElement("p");
     p.style.color="black";
     let timeDisplay=new Date().toLocaleTimeString();
+    p.classList.add("bg-slate-200", "p-1","mt-2", "rounded-lg");
     p.innerText =`${index}.You have completed ${card3Title} on ${dateDisplay} at ${timeDisplay} `
      historySection.appendChild(p);
  
@@ -119,6 +123,7 @@ document.getElementById('card4-button').addEventListener("click", function () {
     let p=document.createElement("p");
     p.style.color="black";
     let timeDisplay=new Date().toLocaleTimeString();
+    p.classList.add("bg-slate-200", "p-1","mt-2", "rounded-lg");
     p.innerText =`${index}.You have completed ${card4Title} on ${dateDisplay} at ${timeDisplay} `
      historySection.appendChild(p);
  
@@ -134,20 +139,22 @@ clearButton.addEventListener("click",function(){
 
 document.getElementById('card5-button').addEventListener("click", function () {
     //card5Button.disabled = true;
-    index++;
+    
     alert("Board updated successfully");
     handleClick("card5-button");
     countAdd++;
     countReduce--;
+    index++;
     document.getElementById("count-add").innerText =countAdd;
     document.getElementById("count-reduce").innerText=countReduce;
     //document.getElementById("date-show").innerText = new Date().toUTCString();
     let card5Title=document.getElementById("card5-title").innerText;
-    let dateDisplay=new Time().toTimeString();
+    let dateDisplay=new Date().toDateString();
     let historySection =document.getElementById("history-section");
     let p=document.createElement("p");
     p.style.color="black";
     let timeDisplay=new Date().toLocaleTimeString();
+    p.classList.add("bg-slate-200", "p-1","mt-2", "rounded-lg");
     p.innerText =`${index}.You have completed ${card5Title} on ${dateDisplay} at ${timeDisplay} `
      historySection.appendChild(p);
  
@@ -168,6 +175,7 @@ document.getElementById('card6-button').addEventListener("click", function () {
     handleClick("card6-button");
     countAdd++;
     countReduce--;
+    index++;
     document.getElementById("count-add").innerText =countAdd;
     document.getElementById("count-reduce").innerText=countReduce;
     //document.getElementById("date-show").innerText = new Date().toUTCString();
@@ -178,6 +186,7 @@ document.getElementById('card6-button').addEventListener("click", function () {
     let p=document.createElement("p");
     p.style.color="black";
     let timeDisplay=new Date().toLocaleTimeString();
+    p.classList.add("bg-slate-200", "p-1","mt-2", "rounded-lg");
     p.innerText =`${index}.You have completed ${card6Title} on ${dateDisplay} at ${timeDisplay}`
      historySection.appendChild(p);
  
